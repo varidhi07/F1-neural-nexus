@@ -3,6 +3,8 @@
 ### objective
 to develope a mchine learning model that predicts whether an F1 driver would obtain podium position depending on the following criteria:<br />
   round, <br />
+  total pit stops
+  total pit time
   fastest speed, and<br />
   grid.<br /> 
 ### description
@@ -23,18 +25,23 @@ using these parameters the data was analysed and visualised then several models 
 ## summary and result
 the data was cleanes then analysed and then finally normalised to get it ready to be split according to target and feature columns. this split data was further divided for training and testing<br />
 now different models(namely SVM, Logistic Regressor, and  Random Forest Classifier) were applied and their accuracy noted, the output being:<br /><br />
-Logistic Regression: 0.8245<br />
-Random Forest: 0.9048<br />
-SVM: 0.9074<br /><br />
-hence SVM was chosen as the model best for for training< which also gave the following results:<br />
-|        | Precision | Recall | F1-Score | Support |
-|-------------|-----------|--------|----------|---------|
-| **0**       | 0.88      | 0.92   | 0.90     | 2425    |
-| **1**       | 0.93      | 0.90   | 0.91     | 2879    |
-| **Accuracy** | -        | -      | 0.91     | 5304    |
-| **Macro Avg** | 0.91    | 0.91   | 0.91     | 5304    |
-| **Weighted Avg** | 0.91 | 0.91   | 0.91     | 5304    |
+Logistic Regression Accuracy: 0.6613876319758673<br />
+Random Forest Accuracy: 0.6734539969834088<br />
+SVM Accuracy: 0.691553544494721<br />
 
+hence SVM was chosen as the model best for for training<br />
+
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|---------|
+| 0     | 0.78      | 0.44   | 0.57     | 2425    |
+| 1     | 0.66      | 0.89   | 0.76     | 2879    |
+
+**Accuracy:** 0.69  
+
+| Metric       | Score |
+|-------------|-------|
+| Macro Avg   | 0.72 / 0.67 / 0.66 |
+| Weighted Avg | 0.71 / 0.69 / 0.67 |
 
 
 
