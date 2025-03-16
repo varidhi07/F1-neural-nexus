@@ -2,8 +2,7 @@
 ## problem statement
 ### objective
 to develope a mchine learning model that predicts whether an F1 driver would obtain podium position depending on the following criteria:<br />
-  points, <br />
-  laps, <br />
+  round, <br />
   fastest speed, and<br />
   grid.<br /> 
 ### description
